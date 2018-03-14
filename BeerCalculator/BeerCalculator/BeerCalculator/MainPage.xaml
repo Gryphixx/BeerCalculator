@@ -5,9 +5,8 @@
              x:Class="BeerCalculator.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Picker x:Name="beertype" Title="Select a beer" VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Picker x:Name="beersize" Title="Select a size"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

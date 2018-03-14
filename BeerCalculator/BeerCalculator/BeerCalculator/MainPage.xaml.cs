@@ -12,6 +12,13 @@ namespace BeerCalculator
         public MainPage()
         {
             InitializeComponent();
+            FillPicker();
+        }
+
+        private void FillPicker()
+        {
+            var picker = new Picker { Title = "Select a beer" };
+            picker.Items.Add("hehe");
         }
     }
 }
