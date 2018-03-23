@@ -22,7 +22,7 @@ namespace BeerCalculator
             beer = bus.GetBeers();
             foreach (BeerType item in beer)
             {
-                beertype.Items.Add(item.ToString());
+                
             }          
         }
     }

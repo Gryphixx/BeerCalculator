@@ -4,17 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
-using MySql.Data.MySqlClient;
-using Syste
 
 namespace BeerCalculator
 {
     class Persistence
     {
         static string conString = "server=maerievoet.ddns.net;user id=GIP;port=3306;database=beercalculator; password=Usman123";
-        MySqlConnection con = new MySqlConnection(conString);
         BeerType cara = new BeerType("Cara");
-        
 
         public List<BeerType> GetBeerList()
         {

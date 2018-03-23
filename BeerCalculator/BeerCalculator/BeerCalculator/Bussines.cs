@@ -12,7 +12,7 @@ namespace BeerCalculator
 
         public List<BeerType> GetBeers()
         {
-            return per.GetBeerList();
+            return per.GetCaraPrice();
         }
     }
 }

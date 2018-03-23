@@ -8,13 +8,13 @@ namespace BeerCalculator
 {
     class BeerSize
     {
-        string _BeerLink;
         public string BeerLink { get; set; }
+        public string Size { get; set; }
 
-        public int BeerQuantity
+        public BeerSize(string link, string size)
         {
             BeerLink = link;
-            BeerQuantity = quantity;
+            Size = size;
         }
 
     }
