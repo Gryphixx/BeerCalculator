@@ -10,9 +10,8 @@ namespace BeerCalculator
     {
         string _BeerLink;
         public string BeerLink { get; set; }
-        public string BeerQuantity { get; set; }
 
-        public BeerSize(string link, string quantity)
+        public int BeerQuantity
         {
             BeerLink = link;
             BeerQuantity = quantity;
