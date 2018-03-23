@@ -14,10 +14,16 @@ namespace BeerCalculator
             InitializeComponent();
             FillPicker();
         }
+        Bussines bus = new Bussines();
 
         private void FillPicker()
         {
-            
+            List<BeerType> beer = new List<BeerType>();
+            beer = bus.GetBeers();
+            foreach (BeerType item in beer)
+            {
+                beertype.Items.Add(item.ToString());
+            }          
         }
     }
 }

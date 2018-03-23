@@ -5,8 +5,8 @@
              x:Class="BeerCalculator.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Picker x:Name="beertype" Title="Select a beer" VerticalOptions="Start" HorizontalOptions="Start"/>
-            <Picker x:Name="beersize" Title="Select a size"/>
+            <ListView x:Name="beertype" Title="Select a beer" VerticalOptions="Start" HorizontalOptions="Start"/>
+            <ListView x:Name="beersize" Title="Select a size"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

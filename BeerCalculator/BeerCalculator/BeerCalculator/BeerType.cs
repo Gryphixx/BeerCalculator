@@ -12,14 +12,11 @@ namespace BeerCalculator
         public string BeerName { get; }
         public List<BeerSize> Sizes = new List<BeerSize>();
 
-        public void FillPickerWithSizes(Picker pckr)
+        public override string ToString()
         {
-            foreach (BeerSize size in Sizes)
-            {
-
-            }
+            return BeerName;
         }
-        
+
         public BeerType(string beerName)
         {
             this.BeerName = BeerName;

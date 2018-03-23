@@ -12,14 +12,20 @@ namespace BeerCalculator
     {
         static string conString = "server=maerievoet.ddns.net;user id=GIP;port=3306;database=beercalculator; password=Usman123";
         MySqlConnection con = new MySqlConnection(conString);
+        BeerType cara = new BeerType("Cara");
+        
 
         public List<BeerType> GetBeerList()
         {
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM beercalculator.bieren;", con);
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            DataTable dt = new DataTable(strDataTableName);
-            da.Fill(dt);
-            return dt;
+            List<BeerType> beer = new List<BeerType>();
+            beer.Add(cara);
+            return beer;
+        }
+
+        public Persistence()
+        {
+            BeerSize blik33 = new BeerSize("https://colruyt.collectandgo.be/cogo/nl/artikeldetail/5383/everyday-cara-pils-4-4-vol-blik-33cl", "Blik 33cl");
+            cara.Sizes.Add(blik33);
         }
     }
 }
